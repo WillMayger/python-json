@@ -1,0 +1,12 @@
+{"service": {
+  "name": "Example Service in Python ",
+  "description": "This is a sample scaffolding for creating a Python microservice",
+  "language": "Python ",
+  "dependencies": [
+      {"service_name": "Other service"},
+      {"service_name": "Yet another service"}
+    ]
+},
+"links":{
+"self":"/info"
+}}
