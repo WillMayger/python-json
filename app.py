@@ -1,5 +1,5 @@
 import json
-from flask import Flask
+from flask import Flask, jsonify
 app = Flask(__name__)
 
 @app.route("/")
@@ -12,7 +12,7 @@ def info():
         info = json.load(info_json)
         info_json.close()
 
-    return str(info)
+    return jsonify(info)
 
 
 if __name__ == "__main__":
